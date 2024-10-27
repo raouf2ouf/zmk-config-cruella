@@ -58,8 +58,8 @@
             // ---------------------------------------------------------------------------
             // |     |  Q  |  W  |  F  |  P  |  B  | |  J  |  L  |  U  |  Y  |BKSPC|     |
             // |     |  A  |  R  |  S  |  T  |  G  | |  M  |  N  |  E  |  I  |  O  |     |
-            // |     |  Z  |  X  |  C  |  D  |  V  | |  K  |  H  |  ,  |  .  |_NAV_|     |
-            //                   | OPT |-SYM-| SPC | | RET |-NUM-| CMD |
+            // |     |  Z  |  X  |  C  |  D  |  V  | |  K  |  H  |  ,  |  .  |RCTRL|     |
+            //                   | CMD |-SYM-| SPC | | RET |-NUM-| OPT |
 
             bindings = <
 &none  &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp BACKSPACE      &none
@@ -70,6 +70,11 @@
         };
 
         num_layer {
+            // ---------------------------------------------------------------------------
+            // |     |  Q  |  W  |  F  |  P  |  B  | |  J  |  L  |  U  |  Y  |BKSPC|     |
+            // |     |  A  |  R  |  S  |  T  |  G  | |  M  |  N  |  E  |  I  |  O  |     |
+            // |     |  Z  |  X  |  C  |  D  |  V  | |  K  |  H  |  ,  |  .  |RCTRL|     |
+            //                   | CMD |-SYM-| SPC | | RET |-NUM-| OPT |
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
