@@ -11,17 +11,17 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_nav {
-            bindings = <&mo 3>;
+        combo_capslock {
+            bindings = <&kp CAPSLOCK>;
             key-positions = <39 38>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
             timeout-ms = <50>;
         };
 
         combo_ctrl {
             bindings = <&skq RCTRL>;
             key-positions = <26 27>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
             timeout-ms = <50>;
         };
 
@@ -29,14 +29,14 @@
             bindings = <&skq RIGHT_SHIFT>;
             key-positions = <8 9>;
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <2 3>;
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
         };
     };
 
@@ -77,28 +77,19 @@
             //                   | CMD |-SYM-| SPC | | RET |-NUM-| OPT |
 
             bindings = <
-&none  &kp DELETE  &kp N7        &kp N8        &kp N9        &none        &kp GRAVE         &kp PIPE           &kp MINUS       &kp SLASH        &kp BACKSPACE   &none
-&none  &kp DOT     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp EQUAL        &kp LEFT_SHIFT  &none
-&none  &kp TILDE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0       &none             &kp PLUS           &kp QUESTION    &kp EXCLAMATION  &kp RCTRL       &none
-                                 &kp LGUI      &kp ESCAPE    &kp SPACE    &kp RET           &trans             &kp RIGHT_ALT
+&none  &kp DELETE  &kp N7        &kp N8        &kp N9        &kp STAR     &kp GRAVE         &kp PIPE           &kp MINUS       &kp SLASH        &kp BACKSPACE   &none
+&none  &kp DOT     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp EQUAL        &kp LEFT_SHIFT  &none
+&none  &kp TILDE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none             &kp PLUS           &kp QUESTION    &kp EXCLAMATION  &kp RCTRL       &none
+                                 &kp LGUI      &kp NUMBER_0  &kp SPACE    &kp RET           &trans             &kp RIGHT_ALT
             >;
         };
 
         symbol_layer {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &none
-                       &trans  &trans  &trans    &trans  &kp ESCAPE  &trans
-            >;
-        };
-
-        nav_layer {
-            bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-                       &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp BACKSLASH     &kp LT             &kp GT     &kp AT     &kp DOLLAR    &kp PIPE       &kp PERCENT   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH  &none
+&none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL  &kp EXCL   &kp COLON     &kp AMPERSAND  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &none
+&none  &kp GRAVE         &kp PLUS           &kp UNDER  &kp MINUS  &kp STAR      &kp TILDE      &kp HASH      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOT    &none
+                                            &kp LGUI   &trans     &kp SPACE     &kp ENTER      &kp ESCAPE    &kp LEFT_ALT
             >;
         };
     };
