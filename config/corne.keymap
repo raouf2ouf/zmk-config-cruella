@@ -71,9 +71,9 @@
 
         num_layer {
             // ---------------------------------------------------------------------------
-            // |     |     |  7  |  8  |  9  |     | |  `  |  |  |  -  |  /  | DEL |     |
-            // |     |  .  |  4  |  5  |  6  |     | |  '  |  "  |  _  |  =  |SHIFT|     |
-            // |     |  ~  |  1  |  2  |  3  |     | |     |  +  |  ?  |  !  |RCTRL|     |
+            // |     |     |  7  |  8  |  9  |  *  | | CPY | PST | CUT | UND | DEL |     |
+            // |     |  .  |  4  |  5  |  6  |  -  | |  <| | DWN |  UP |  |> |SHIFT|     |
+            // |     |  =  |  1  |  2  |  3  |  +  | |  HM | PGD | PGU | END |RCTRL|     |
             //                   | OPT |  0  | SPC | | RET |_NUM_| CMD |
 
             bindings = <
@@ -89,8 +89,7 @@
             // |     |  \  |  <  |  >  |  @  |  $  | |  |  |  %  |  [  |  ]  |  /  |     |
             // |     |  '  |  "  |  =  |  !  |  :  | |  &  |  ?  |  (  |  )  |  ;  |     |
             // |     |  `  |  +  |  _  |  -  |  *  | |  ~  |  #  |  {  |  }  |  .  |     |
-            //                   | OPT |  0  | SPC | | RET |_NUM_| CMD |
-
+            //                   | OPT |_SYM_| SPC | | RET | ESC | CMD |
             bindings = <
 &none  &kp BACKSLASH     &kp LT             &kp GT     &kp AT     &kp DOLLAR    &kp PIPE       &kp PERCENT   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH  &none
 &none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL  &kp EXCL   &kp COLON     &kp AMPERSAND  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &none
